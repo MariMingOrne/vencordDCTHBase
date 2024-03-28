@@ -1,0 +1,355 @@
+/* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!!! */
+
+/*base*/
+@import url('https://refact0r.github.io/midnight-discord/midnight-new.css');
+/*radial status circle thing*/
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+/* customize things here */
+:root {
+    
+	/* top left corner text */
+	--corner-text: 'meiji16';
+
+  /*RADIAL STATUS CODE starts here*/
+    --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+  --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+  --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+
+  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+  --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+  --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+
+  --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+
+  /*RADIAL STATUS CODE ends here*/
+
+	/* font, change to 'gg sans' for default discord font*/
+	--font: 'Nunito';
+
+	/* amount of spacing and padding */
+	--spacing: 12px;
+
+	/* animations */
+	/* ALL ANIMATIONS CAN BE DISABLED WITH REDUCED MOTION IN DISCORD SETTINGS */
+	--list-item-transition: 0.10s ease; /* channels/members/settings hover transition */
+	--unread-bar-transition: 0.2s ease; /* unread bar moving into view transition */
+	--moon-spin-transition: 0.4s ease; /* moon icon spin */
+	--icon-spin-transition: 40s ease; /* round icon button spin (settings, emoji, etc.) */
+
+	/* corner roundness (border-radius) */
+	--roundness-xl: 22px; /* roundness of big panel outer corners */
+	--roundness-l: 20px; /* popout panels */
+	--roundness-m: 16px; /* smaller panels, images, embeds */
+	--roundness-s: 12px; /* members, settings inputs */
+	--roundness-xs: 10px; /* channels, buttons */
+	--roundness-xxs: 8px; /* searchbar, small elements */
+
+
+	/* direct messages moon icon */
+	/* change to block to show, none to hide */
+	--discord-icon: none; /* discord icon */
+	--moon-icon: none; /* moon icon */
+	--moon-icon-url: none;
+	--moon-icon-size: auto;
+	--version1_0_5:			none;
+
+	/* filter uncolorable elements to fit theme */
+	/* (just set to none, they're too much work to configure) */
+	--login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4); /* login background artwork */
+	--green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43); /* add friend page explore icon */
+	--blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2); /* add friend page school icon */
+ 
+ /*placement*/
+  content: "";
+  position: fixed;
+  z-index: 0;
+
+--backdrop-image: var(--background-image);
+--backdrop-position: var(--background-position);
+--backdrop-size: var(--background-size);
+--backdrop-repeat: var(--background-repeat);
+--backdrop-attachment: var(--background-attachment);
+--backdrop-brightness: var(--background-brightness);
+--backdrop-contrast: var(--background-contrast);
+--backdrop-saturation: var(--background-saturation);
+--backdrop-invert: var(--background-invert);
+--backdrop-grayscale: var(--background-grayscale);
+--backdrop-sepia: var(--background-sepia);
+--backdrop-blur: var(--background-blur);
+--user-popout-image: var(--background-image);
+--user-popout-position: var(--background-position);
+--user-popout-size: var(--background-size);
+--user-popout-repeat: var(--background-repeat);
+--user-popout-attachment: var(--background-attachment);
+--user-popout-brightness: var(--background-brightness);
+--user-popout-contrast: var(--background-contrast);
+--user-popout-saturation: var(--background-saturation);
+--user-popout-invert: var(--background-invert);
+--user-popout-grayscale: var(--background-grayscale);
+--user-popout-sepia: var(--background-sepia);
+--user-popout-blur: calc(var(--background-blur) + 3px);
+--user-popout-overlay: rgba(0, 0, 0, 0.65);
+--user-modal-image: var(--background-image);
+--user-modal-position: var(--background-position);
+--user-modal-size: var(--background-size);
+--user-modal-repeat: var(--background-repeat);
+--user-modal-attachment: var(--background-attachment);
+--user-modal-brightness: var(--background-brightness);
+--user-modal-contrast: var(--background-contrast);
+--user-modal-saturation: var(--background-saturation);
+--user-modal-invert: var(--background-invert);
+--user-modal-grayscale: var(--background-grayscale);
+--user-modal-sepia: var(--background-sepia);
+--user-modal-blur: calc(var(--background-blur) + 3px);
+}
+
+/*important BG CODE*/
+.appMount_fae9dd{background:var(--background-overlay)}
+.app_de4237{background:rgba(0,0,0,0)}
+.bg__12180{
+    background:var(--background-image) var(--background-position)/var(--background-size) var(--background-repeat) var(--background-attachment);
+    filter:grayscale(var(--background-grayscale)) sepia(var(--background-sepia)) invert(var(--background-invert)) brightness(var(--background-brightness)) contrast(var(--background-contrast)) saturate(var(--background-saturation)) blur(var(--background-blur));
+    z-index:-5;
+}
+
+/*glow text channel*/
+.wrapper__7bcde.modeUnreadImportant_efb53e:hover .link__95dc0 .linkTop_eaa673 .icon_eff5d4{color:var(--channel-text-selected)}
+.wrapper__7bcde.modeSelected__487d6 .link__95dc0:after{right:0;background:var(--main-color);animation:cv-channel-select .3s ease-in-out}
+.containerDefault__3187b .wrapper__7bcde.modeSelected__487d6 .link__95dc0 .icon_eff5d4,.containerDefault__3187b .wrapper__7bcde.modeSelected__487d6 .link__95dc0 .name__8d1ec{color:var(--channel-text-selected)}
+.containerDefault__3187b .wrapper__7bcde.modeSelected__487d6 .link__95dc0 .live_b195a5{color:var(--channel-text-selected) !important}
+.wrapper__7bcde.modeSelected__487d6 .link__95dc0 .actionIcon_d679b5{opacity:.7}
+.wrapper__7bcde.modeSelected__487d6 .link__95dc0 .actionIcon_d679b5:hover{opacity:1}
+.wrapper__7bcde.modeSelected__487d6 .text-xs-medium__30cbe,.wrapper__7bcde.modeSelected__487d6 .text-xs-normal__56c35{color:#fff !important}
+.wrapper__7bcde.modeConnected__1c02e .link__95dc0 .linkTop_eaa673 .name__8d1ec{color:var(--main-color);text-shadow:0 0 3px}
+.wrapper__7bcde.modeConnected__1c02e .link__95dc0 .linkTop_eaa673 .icon_eff5d4{color:var(--main-color);filter:drop-shadow(0 0 3px)}
+.wrapper__7bcde.modeMuted__0aeea .link__95dc0 .linkTop_eaa673 .icon_eff5d4,.wrapper__7bcde.modeMuted__0aeea .link__95dc0 .linkTop_eaa673 .name__8d1ec{color:var(--muted-color)}
+.wrapper__7bcde.modeMuted__0aeea:hover .link__95dc0 .linkTop_eaa673:before{background:rgba(255,255,255,.07)}
+.containerDefault__3187b .wrapper__7bcde.modeMuted__0aeea:hover .link__95dc0 .linkTop_eaa673 .icon_eff5d4,.containerDefault__3187b .wrapper__7bcde.modeMuted__0aeea:hover .link__95dc0 .linkTop_eaa673 .name__8d1ec{color:var(--channel-color)}
+.unread__48cf4{display:none}.live_b195a5{background-color:var(--main-color) !important}
+.users__65981,.total_c01838{width:30px;color:rgba(255,255,255,.3);font-weight:600;text-align:right;transition:all .15s ease-in-out}
+.users__65981{padding:0 4px 0 6px;background:rgba(0, 0, 0, 0.15)}
+.total_c01838{padding:0 6px 0 4px;background:rgba(16, 206, 240, 0.103);box-shadow:inset 1px 0 rgba(51, 214, 255, 0.781)}
+.total_c01838:after{display:none}.modeConnected__1c02e .users__65981{color:var(--main-color);text-shadow:0 0 1px}
+.listDefault__205d0{padding-left:24px}
+.listDefault__205d0 .clickable__137bc:hover .content_b60865{background:rgba(0,0,0,.04)}
+
+
+/*important BG CODE*/
+.appMount_fae9dd{background:var(--background-overlay)}
+.app_de4237{background:rgba(0,0,0,0)}
+.bg__12180{
+    background:var(--background-image) var(--background-position)/var(--background-size) var(--background-repeat) var(--background-attachment);
+    filter:grayscale(var(--background-grayscale)) sepia(var(--background-sepia)) invert(var(--background-invert)) brightness(var(--background-brightness)) contrast(var(--background-contrast)) saturate(var(--background-saturation)) blur(var(--background-blur));
+    z-index:-5; /*puts background behind other stuff <3*/
+}
+
+/*text below user channel*/
+
+.button_b82d53.buttonColor__7bad9 {
+    background-color: var(--but-col-vc);
+    padding:0} /*icon padding (soundboard, stream, activity)*/
+
+.container_debb33{ 
+    position:relative;
+    background:rgba(0,0,0,0);
+    margin-bottom:20px;
+    }
+
+.container_debb33:before,.container_debb33:after{ 
+    /*text settings*/
+    position:absolute;
+    font-family: cursive;
+    font-size:10px;
+    font-weight:700;
+    transition:all .5s ease-in-out;
+    
+    }
+
+.container_debb33:before{
+    /*text pos and content*/
+    color: var(--text-4);
+    content:var(--text-un-user);
+    bottom: -15px;
+    right:50%;
+    text-align:left;
+    transform:translateX(50%);
+    
+    }
+
+/*divider for server and discord icon space stuff*/
+.guildSeparator__75928{
+    background-color: var(-col);
+    position:relative;
+    width:50px;
+    display:block;
+    margin:3px auto 3px;
+    margin-left:2 4px; 
+}
+
+
+/*random shit i found that changes the icons below ur servers*/
+.circleIconButton__05cf2{
+    scale: var(--cir-size);
+}
+
+/*color keyframe changer*/
+
+@keyframes 
+rainbow {
+    /*the percent is like when the change is at that percentening all in secs u put in the code that has "ETO YON PUTANGINA" u know!*/ 
+0%
+    {
+    -webkit-filter:hue-rotate(  var(--key-hue-0));
+    -moz-filter:hue-rotate(var(--key-hue-0));
+    -ms-filter:hue-rotate(var(--key-hue-0));
+    filter:hue-rotate(var(--key-hue-0));
+    
+    }
+25%
+    {
+    -webkit-filter:hue-rotate(var(--key-hue-25));
+    -moz-filter:hue-rotate(var(--key-hue-25));
+    -ms-filter:hue-rotate(var(--key-hue-25));
+    filter:hue-rotate(var(--key-hue-25));
+    }
+50%
+    {
+    -webkit-filter:hue-rotate(var(--key-hue-50));
+    -moz-filter:hue-rotate(var(--key-hue-50));
+    -ms-filter:hue-rotate(var(--key-hue-50));
+    filter:hue-rotate(var(--key-hue-50));
+    }
+75%
+    {
+    -webkit-filter:hue-rotate(var(--key-hue-75));
+    -moz-filter:hue-rotate(var(--key-hue-75));
+    -ms-filter:hue-rotate(var(--key-hue-75));
+    filter:hue-rotate(var(--key-hue-75));
+    }
+100%
+    {-webkit-filter:hue-rotate(var(--key-hue-100));
+    -moz-filter:hue-rotate(var(--key-hue-100));
+    -ms-filter:hue-rotate(var(--key-hue-100));
+    filter:hue-rotate(var(--key-hue-100));
+    }
+}
+
+/*color border of folder*/
+.folder__17546{
+    border-radius:30%;
+}
+
+/*OTHER IMPORTANT STUFF RADIAL NOTIF*/
+.wrapper_a7e7a8 .scroller__3d071>div:not(.listItem-GuPuDH)>div{width:50px;margin-left:10px}
+.wrapper__3670f{height:54px;width:54px}
+.pill_d1140c, .pill__6b31b{
+    position:absolute;
+    top:-3px; 
+    width:100px;
+    height:100px;
+    opacity:100%!important;
+}
+
+/*folder icon */
+.listItem__48528{opacity:100%;width:initial;border-radius:var(--border-rad-folder);}
+
+.item_f9d377{
+    animation:var(--unread-server-animation) var(--radial-notif)/*seconds on how fast it changes*/ linear infinite;
+    border:10px solid var(--main-theme-color);
+    background-color: var(--unread-base);
+    border-radius:var(--border-rad-folder);
+    left:13px;
+    top:0px;
+    width:54px!important;
+    height:54px!important;
+    transform:none!important;
+    z-index:1;
+    }
+
+/*rainbow tooltip, when u hover on a server, IT'S RAINBOW BITCH*/
+.listItemTooltip__758ea, .listItemTooltip_e19493{
+     animation:var(--unread-server-animation) var(--radial-notif)/*seconds on how fast it changes*/ linear infinite;
+    border:10px solid var(--main-theme-color);
+    background-color: var(--unread-base);
+    left:12px;
+    top:0px;
+    transform:none!important;
+    z-index:1;
+}
+
+/*when folder open there's like this one line in-between u know stuff yea that,.*/
+.expandedFolderBackground_b1385f{
+    background-color:var(--bg-2);
+    scale:var(--scale-icon-com-p);
+    z-index:0;
+}
+
+/*SERVER TITLE BACKGROUND */
+.container_f41675{
+    background:var(--bg-server-title);
+}
+
+/*call container vc thing so it isn't black tbh*/
+.callContainer__1477d{
+    background:var(--bg-5);
+    
+}
+
+/* top right window buttons*/
+[class^='winButtonClose']::after {
+	background-color: var(--close-indicator) !important;/*close*/
+}
+[class^='winButtonMinMax']:nth-child(3)::after {
+	background-color: var(--min-indicator) !important;/*min*/
+}
+[class^='winButtonMinMax']:nth-child(4)::after {
+	background-color: var(--max-indicator) !important;/*max*/
+}
+
+.guilds__2b93a::before /* add top scroll shadow */ {
+	content: '';
+	position: absolute;
+	background: linear-gradient(var(--bg-2) 0%, transparent 15%);
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+	pointer-events: none;
+	z-index: 1;
+}
+
+
+.guilds__2b93a::after /* add bottom scroll shadow */,
+.membersWrap__5ca6b::after {
+	content: '';
+	position: absolute;
+	background: linear-gradient(transparent 85%, var(--bg-2) 95%);
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+	pointer-events: none;
+	border-radius: 0 0 var(--roundness-xl) var(--roundness-xl);
+}
+
+/*discord icon replacement*/
+.childWrapper_a6ce15:has(svg:not(.favoriteIcon_adf80e))
+{
+    /*icon top left, can be gifs btw*/
+    background-size: var(--di-size); /*how big?*/
+	background-image: var(--di-link); /*background image link*/
+    background-color: var(--di-bg-color) !important; /*background color*/
+    border-radius:var(--di-border-rad); /*makes it round*/
+	background-position: var(--di-pos);
+}
+
+/*IMPORTANT position in layer of images*/
+:root .app_b1f720::before, :root .app_b1f720::after, :root .app_de4237::after, :root .app_de4237::before, :root .layers__1c917::before, :root .layers__1c917::after, :root .app_b1f720::before, :root .bg__12180::after, :root .bg__12180::before {
+  content: "";
+  position: fixed;
+  z-index: 3;
+  pointer-events: none;
+}
