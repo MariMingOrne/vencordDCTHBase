@@ -40,7 +40,7 @@
 	--moon-icon-url: none;
 	--moon-icon-size: auto;
 	--version1_0_5:			none;
-
+	
 	/* filter uncolorable elements to fit theme */
 	/* (just set to none, they're too much work to configure) */
 	--login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4); /* login background artwork */
@@ -300,7 +300,7 @@ rainbow {
     /*icon top left, can be gifs btw*/
     background-size: var(--di-size); /*how big?*/
     background-image: var(--di-link); /*background image link*/
-    background-repeat: no-repeat !important;
+    background-repeat: var(--di-icon-rep); /*repeats the icon image*/
     background-color: var(--di-bg-color) !important; /*background color*/
     border-radius:var(--di-border-rad); /*makes it round*/
 	background-position: var(--di-pos);
