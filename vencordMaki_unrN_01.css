@@ -299,7 +299,8 @@ rainbow {
 {
     /*icon top left, can be gifs btw*/
     background-size: var(--di-size); /*how big?*/
-	background-image: var(--di-link); /*background image link*/
+    background-image: var(--di-link); /*background image link*/
+    background-repeat: no-repeat !important;
     background-color: var(--di-bg-color) !important; /*background color*/
     border-radius:var(--di-border-rad); /*makes it round*/
 	background-position: var(--di-pos);
