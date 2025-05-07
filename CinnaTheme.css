@@ -1,9 +1,9 @@
 /* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!!! */
 
 /*base*/
-@import url('https://refact0r.github.io/midnight-discord/midnight.css');
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 /*radial status circle thing*/
-@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url("ttps://discordstyles.github.io/RadialStatus/RadialStatus.css");
 /*font*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
@@ -115,23 +115,4 @@
     z-index:-5;
 }
 
-/*glow text channel*/
-.wrapper__7bcde.modeUnreadImportant_efb53e:hover .link__95dc0 .linkTop_eaa673 .icon_eff5d4{color:var(--channel-text-selected)}
-.wrapper__7bcde.modeSelected__487d6 .link__95dc0:after{right:0;background:var(--main-color);animation:cv-channel-select .3s ease-in-out}
-.containerDefault__3187b .wrapper__7bcde.modeSelected__487d6 .link__95dc0 .icon_eff5d4,.containerDefault__3187b .wrapper__7bcde.modeSelected__487d6 .link__95dc0 .name__8d1ec{color:var(--channel-text-selected)}
-.containerDefault__3187b .wrapper__7bcde.modeSelected__487d6 .link__95dc0 .live_b195a5{color:var(--channel-text-selected) !important}
-.wrapper__7bcde.modeSelected__487d6 .link__95dc0 .actionIcon_d679b5{opacity:.7}
-.wrapper__7bcde.modeSelected__487d6 .link__95dc0 .actionIcon_d679b5:hover{opacity:1}
-.wrapper__7bcde.modeSelected__487d6 .text-xs-medium__30cbe,.wrapper__7bcde.modeSelected__487d6 .text-xs-normal__56c35{color:#fff !important}
-.wrapper__7bcde.modeConnected__1c02e .link__95dc0 .linkTop_eaa673 .name__8d1ec{color:var(--main-color);text-shadow:0 0 3px}
-.wrapper__7bcde.modeConnected__1c02e .link__95dc0 .linkTop_eaa673 .icon_eff5d4{color:var(--main-color);filter:drop-shadow(0 0 3px)}
-.wrapper__7bcde.modeMuted__0aeea .link__95dc0 .linkTop_eaa673 .icon_eff5d4,.wrapper__7bcde.modeMuted__0aeea .link__95dc0 .linkTop_eaa673 .name__8d1ec{color:var(--muted-color)}
-.wrapper__7bcde.modeMuted__0aeea:hover .link__95dc0 .linkTop_eaa673:before{background:rgba(255,255,255,.07)}
-.containerDefault__3187b .wrapper__7bcde.modeMuted__0aeea:hover .link__95dc0 .linkTop_eaa673 .icon_eff5d4,.containerDefault__3187b .wrapper__7bcde.modeMuted__0aeea:hover .link__95dc0 .linkTop_eaa673 .name__8d1ec{color:var(--channel-color)}
-.unread__48cf4{display:none}.live_b195a5{background-color:var(--main-color) !important}
-.users__65981,.total_c01838{width:30px;color:rgba(255,255,255,.3);font-weight:600;text-align:right;transition:all .15s ease-in-out}
-.users__65981{padding:0 4px 0 6px;background:rgba(0, 0, 0, 0.15)}
-.total_c01838{padding:0 6px 0 4px;background:rgba(16, 206, 240, 0.103);box-shadow:inset 1px 0 rgba(51, 214, 255, 0.781)}
-.total_c01838:after{display:none}.modeConnected__1c02e .users__65981{color:var(--main-color);text-shadow:0 0 1px}
-.listDefault__205d0{padding-left:24px}
-.listDefault__205d0 .clickable__137bc:hover .content_b60865{background:rgba(0,0,0,.04)}
+
